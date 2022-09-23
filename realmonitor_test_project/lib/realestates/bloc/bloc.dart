@@ -10,18 +10,18 @@ import 'package:realmonitor_test_project/realestates/models/realestatemodel.dart
 class RealEstatesBloc extends Bloc<RealEstateEvents, RealEstateListState> {
   //
   final RealEstatesRepo realEstatesRepo;
-  List<RealEstate> realEstates = List.empty(growable: true);
+
+  ///[] this is more concise
+  List<RealEstate> realEstates = []; // List.empty(growable: true);
 
   RealEstatesBloc(this.realEstatesRepo) : super(RealEstateListInitState()) {
     on<RealEstateEvents>(_onFetchRealEstates);
   }
 
-
-  Future<void> _onFetchRealEstates(RealEstateEvents event,
-      Emitter<RealEstateListState> emit,) async {
-
-
-
+  Future<void> _onFetchRealEstates(
+    RealEstateEvents event,
+    Emitter<RealEstateListState> emit,
+  ) async {
     switch (event) {
       case RealEstateEvents.fetchRealEstates:
         emit(RealEstateListLoading());
@@ -50,5 +50,3 @@ class RealEstatesBloc extends Bloc<RealEstateEvents, RealEstateListState> {
     }
   }
 }
-
-

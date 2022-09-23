@@ -4,6 +4,7 @@ abstract class RealEstatesRepo {
   Future<List<RealEstate>> getRealEstateList();
 }
 
+///A Services implementing a Repo? interesting....
 class RealEstateServices implements RealEstatesRepo {
   static const _baseUrl = 'dummytesturl.com';
   static const String _GET_REALESTATES = '/realestates';
@@ -19,7 +20,6 @@ class RealEstateServices implements RealEstatesRepo {
 
     List<RealEstate> realEstates = [];
 
-
     //TODO: For firebase implementation:
     // await Firestore.instance.collection("dummyrealestates").getDocuments().then(
     //       (QuerySnapshot snapshot) =>
@@ -32,10 +32,13 @@ class RealEstateServices implements RealEstatesRepo {
 
     // add dummy data instead
     await Future.delayed(const Duration(seconds: 2));
-    realEstates.add(RealEstate(name: 'Sus', minPrice: 1200000, maxPrice: 5400000, isNotificationEnabled: true, privateAdvertisersOnly: false));
+    realEstates.add(RealEstate(
+        name: 'Sus',
+        minPrice: 1200000,
+        maxPrice: 5400000,
+        isNotificationEnabled: true,
+        privateAdvertisersOnly: false));
 
-
-    return
-    realEstates;
+    return realEstates;
   }
 }
