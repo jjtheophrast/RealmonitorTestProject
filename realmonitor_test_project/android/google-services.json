@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "728063739729",
+    "project_id": "realmonitor-test",
+    "storage_bucket": "realmonitor-test.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728063739729:android:6d88bc3002a9ba9c7ef570",
+        "android_client_info": {
+          "package_name": "com.theophrast.realmonitor.realmonitor_test_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728063739729-l7jocje9c9isd3vb2fan7oi8ulqmlho7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmkWIFA9S2XBd2auhJfHI1Z02-UmQyhT8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "728063739729-l7jocje9c9isd3vb2fan7oi8ulqmlho7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
