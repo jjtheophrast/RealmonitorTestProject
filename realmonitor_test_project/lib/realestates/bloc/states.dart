@@ -15,7 +15,9 @@ class RealEstateListLoaded extends RealEstateListState {
   RealEstateListLoaded({required this.realEstateList});
 }
 
-class  RealEstateListError extends RealEstateListState {
+class RealEstateListError extends RealEstateListState {
+  ///It's hard to guess what's errors type is, even the language server cannot do it
+  ///and defaults to dynamic
   final error;
   RealEstateListError({this.error});
 }
